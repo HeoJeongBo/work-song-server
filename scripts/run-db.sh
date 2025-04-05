@@ -19,7 +19,7 @@ fi
 
 docker build -t worksongpostgres -f ./db.Dockerfile .
 
-docker run -d --name worksongpostgres \
+docker run -d --name postgres \
   -e POSTGRES_USER=$DB_USER \
   -e POSTGRES_PASSWORD=$DB_PASSWORD \
   -e POSTGRES_DB=$DB_NAME \
